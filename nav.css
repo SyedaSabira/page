@@ -1,0 +1,237 @@
+/* CSS Reset */
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* CSS Variables */
+:root {
+    --navbar-height: 59px;
+}
+
+/* Navigation Bar */
+#navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+/* Navigation Bar: Logo & Image */
+#logo {
+    margin: 10px 10px;
+}
+
+#logo img {
+    margin: -15px -15px;
+    height: 90px;
+}
+
+/* Navigation Bar: List Styling */
+#navbar ul {
+    display: flex;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.1rem;
+}
+
+#navbar ul li a {
+    color: white;
+    display: block;
+    border-radius: 12px;
+    text-decoration: none;
+    padding: 3px 15px;
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+}
+
+/* Home Section */
+#home {
+    display: flex;
+    flex-direction: column;
+    height: 480px;
+    padding: 3px 200px;
+    align-items: center;
+    justify-content: center;
+}
+
+#home .paragraph {
+    margin: 0px 0px;
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    background: url('Image/magnifying-glass-4490044_1280.jpg') center center/cover;
+    height: 77%;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    z-index: -1;
+    opacity: 1;
+}
+
+#home h1 {
+    color: white;
+    text-align: center;
+}
+
+#home p {
+    color: white;
+    font-size: 1.2rem;
+}
+
+/* Client Section */
+/* #client-section::before {
+    content: "";
+    position: absolute;
+    background: url('Image/pizza-g377026a90_1280.png');
+    height: 37%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#clients {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#clients img {
+    height: 150px;
+}
+
+.client-item {
+    padding: 0px -1px;
+} */
+
+/* Contact Section */
+.container {
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #3498db;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #fff;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-size: 14px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: calc(100% - 10px);
+    padding: 8px;
+    border: none;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+.form-group input[type="submit"] {
+    background-color: #2980b9;
+    color: #fff;
+    cursor: pointer;
+}
+
+.form-group input[type="submit"]:hover {
+    background-color: #1a69a4;
+}
+
+/* Style for the image */
+.image-container {
+    width: 300px;
+    margin: 20px;
+}
+
+.image-container img {
+    margin-top: -120%;
+    margin-left: 300%;
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* Services Section */
+#services-container {
+    margin: 20px auto;
+    text-align: center;
+}
+
+#services {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#services .box {
+    flex: 0 0 calc(33.33% - 20px);
+    padding: 20px;
+    margin: -10px;
+}
+
+#services .box img {
+    height: 125px;
+    margin: auto;
+    display: block;
+}
+
+/* Footer */
+footer {
+    color: white;
+    background-color: black;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+/* Utility Classes */
+.center {
+    text-align: center;
+}
+
+.h-secondary {
+    margin: 0px 0px;
+    font-size: 1.5rem;
+    padding: 8px;
+    text-align: center;
+}
+
+.h-primary {
+    margin: 0px 0px;
+    font-size: 2.6rem;
+    padding: 12px;
+    text-align: center;
+}
+
+.btn {
+    padding: 4px 15px;
+    border: 2px solid white;
+    background-color: rgb(234, 124, 124);
+    font-size: 1rem;
+    margin: 17px;
+    border-radius: 15px;
+}
+.GoogleMapTA{
+   height: 100%;
+   width: 100%;
+}
